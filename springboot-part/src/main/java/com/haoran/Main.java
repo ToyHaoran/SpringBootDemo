@@ -1,6 +1,7 @@
 package com.haoran;
 
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -9,6 +10,7 @@ import org.springframework.context.annotation.Bean;
 //2.自动加载配置 @EnableAutoConfiguration 自动加载其他的配置类
 //3.@ComponentScan 默认是当前类所在的包,子包的注解
 @SpringBootApplication  //启动类
+@MapperScan("com.haoran.mapper") //mapper接口所在的的位置！
 public class Main {
     public static void main(String[] args) {
         // 1.创建ioc容器,加载配置  2.启动内置的web服务器

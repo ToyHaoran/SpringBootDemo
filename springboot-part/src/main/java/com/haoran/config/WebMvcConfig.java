@@ -1,10 +1,10 @@
 package com.haoran.config;
 
 import com.haoran.handler.MyInterceptor;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-
 
 @Configuration
 public class WebMvcConfig  implements WebMvcConfigurer {
