@@ -1,0 +1,19 @@
+# yaml有层次，是可以继承的配置文件格式。注意key和值之间有空格。
+# springboot规定的配置
+server:
+  port: 8080  # 端口号。
+  servlet:
+    context-path: /  # 访问的根路径
+
+spring:
+  profiles:
+    active: dev,test # 激活外部的配置 application-{key}，会覆盖默认配置文件
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource  # 使用druid连接池
+    url: jdbc:mysql://localhost:3306/studb
+    username: root
+    password: toy123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+

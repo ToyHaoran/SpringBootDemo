@@ -1,0 +1,10 @@
+
+# 自定义参数
+lhr:
+  user:
+    name: lihaoran
+    age: 18
+    gfs:  # 集合参数
+      - 小红
+      - 小明
+      - 小白

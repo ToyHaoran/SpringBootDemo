@@ -1,0 +1,10 @@
+# 所有的参数都在一个文件application.properties
+
+# 端口号，spring-key是固定的
+server.port=8080
+# 访问的根路径
+server.servlet.context-path=/
+
+# 自定义参数
+lhr.name=李浩然
+lhr.age=18
