@@ -19,6 +19,7 @@
 
     <modules>
         <module>springboot-part</module>
+        <module>mybatis-plus-demo</module>
     </modules>
 
     <properties>
@@ -35,9 +36,22 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!-- 测试环境 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+        </dependency>
+
+        <!-- mybatis-plus  -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.5.3.1</version>
         </dependency>
 
         <!-- 数据库相关配置启动器 jdbctemplate 事务相关-->
